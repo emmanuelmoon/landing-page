@@ -1,6 +1,12 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex: 1 1 auto;
 }
 
 .header {
@@ -54,10 +60,36 @@ body {
   font-size: 18px;
   padding: 0px;
   width: 100px;
-  background-color: #3882f6;
+  background-color: #6e30fe;
   border: 0px;
   padding: 5px 8px;
   border-radius: 5px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.info-head {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.info-pics {
+  display: flex;
+}
+.info-pics img {
+  height: 200px;
+  width: auto;
+  border: 5px solid #6e30fe;
+  border-radius: 5px;
+  flex-shrink: 1;
 }
 
 ul {
